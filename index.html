@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>first page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="main1" id="main">
+    <nav>
+        <div class="nav">
+            <H1 id="text">Company logo here</H1>
+        </div>
+        <div class="day">
+            <button onclick="colChange1()" id="day"><img class="btnimg1" src="./images/sun.png" alt=""></button>
+            <button onclick="colChange()" id="night"><img class="btnimg2" src="./images/moon.png" alt=""></button>
+        </div>
+    </nav>
+    <main>
+
+        <div class="box" id="box">
+            <div class="box1">
+                <div class="question">
+                    <p align="center" id="text">Question marked with <span style="color:violet">*</span> are important
+                    </p>
+                </div>
+                <button class="btn">
+                    Exit Survey
+                </button>
+                <div class="slider">
+                    <p id="text">Slider js se bana lena</p>
+                </div>
+            </div>
+            <div class="box2">
+                <div class="qasked">
+                    <p id="text"><span style="color:violet"> *</span> How likely is it that you would recommend XXX
+                        Company to a friend
+                        or colleague?</p>
+                </div>
+                <div class="emogi">
+                    <div class="ecard">
+                        <img class="emimg" src="./images/vuns.png" alt="">
+                        <p class="emt">Very Unsatisfied</p>
+                    </div>
+                    <div class="ecard">
+                        <img class="emimg" src="./images/uns.png" alt="">
+                        <p class="emt">Unsatisfied</p>
+                    </div>
+                    <div class="ecard">
+                        <img class="emimg" src="./images/neutr.png" alt="">
+                        <p class="emt">Neutral</p>
+                    </div>
+                    <div class="ecard">
+                        <img class="emimg" src="./images/ex.png" alt="">
+                        <p class="emt">Excited</p>
+                    </div>
+                    <div class="ecard">
+                        <img class="emimg" src="./images/vex.png" alt="">
+                        <p class="emt">Very Excited</p>
+                    </div>
+                </div>
+                <div class="button">
+                    <button class="btn1">Next</button>
+                </div>
+            </div>
+
+
+        </div>
+    </main>
+
+</body>
+<script>
+     var m = document.getElementById("main");
+        var b = document.getElementById("box");
+        var d = document.getElementById("day");
+        var n = document.getElementById("night");
+
+    function colChange() {
+       
+        m.style.backgroundColor = "black";
+        b.style.background = "#000";
+        d.style.display = "block";
+        n.style.display = "none";
+
+    }
+    function colChange1() {
+    //     var m = document.getElementById("main");
+    //     var b = document.getElementById("box");
+    //     var d = document.getElementById("day");
+    //     var n = document.getElementById("night");
+        m.style.backgroundColor = "white";
+        b.style.backgroundColor = "white";
+        d.style.display = "none";
+        n.style.display = "block";
+    }
+</script>
+
+</html>
